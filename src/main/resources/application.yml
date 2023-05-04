@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/anime_db
+    username: stylish
+    password: CgepAMr9Tmv83Ak
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  error:
+    include-stacktrace: on_param

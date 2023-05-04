@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres
+    container_name: anime_db_postgresql
+    restart: always
+    environment:
+      POSTGRES_USER: stylish
+      POSTGRES_PASSWORD: CgepAMr9Tmv83Ak
+      POSTGRES_DB: anime_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - anime_db_data:/var/lib/postgresql
+
+volumes:
+  anime_db_data:
