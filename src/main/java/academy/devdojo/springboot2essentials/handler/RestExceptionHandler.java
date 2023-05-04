@@ -42,7 +42,7 @@ public class RestExceptionHandler {
                         .timestamp(LocalDateTime.now())
                         .status(HttpStatus.BAD_REQUEST.value())
                         .title("Bad Request Exception, invalid fields")
-                        .details(ex.getMessage())
+                        .details("Check the fields")
                         .developerMessage(ex.getClass().getName())
                         .fields(fields)
                         .fieldsMessage(fieldsMessage)
